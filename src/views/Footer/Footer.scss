@@ -1,0 +1,81 @@
+.footer-wrap {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  .footer-logo {
+    margin-bottom: 30px;
+    h4 {
+      color: $gray-100;
+      font-size: 40px;
+    }
+  }
+  .newsletter-form {
+    padding: 30px 0px;
+    border-radius: 3px;
+    form {
+      background-color: #172a46;
+      padding: 20px;
+      .form-group {
+        display: flex;
+        input {
+          height: 60px;
+          padding: 15px;
+          margin-bottom: 0;
+          &[type="email"] {
+            width: 70%;
+            @media screen and (max-width: $break-small) {
+              width: 60%;
+            }
+          }
+          &[type="submit"] {
+            background-color: $primary;
+            width: 30%;
+            font-size: 11px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-right: 0;
+            @media screen and (max-width: $break-small) {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bg {
+    background-image: url("../../../content/assets/images/pattern.png");
+    background-size: contain;
+    padding: 20px;
+  }
+  .footer-menu {
+    .footer-title {
+      font-size: 25px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin-left: 0;
+      li {
+        color: white;
+        line-height: 2;
+        a {
+          color: white;
+          font-size: 13px;
+          transition: all 0.3s linear;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+      &.footer-social {
+        li {
+          display: flex;
+          .footer-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

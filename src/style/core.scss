@@ -1,0 +1,129 @@
+/* Font Mixins */
+@mixin serif-font {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@mixin script-font {
+  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+@mixin body-font {
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@mixin heading-font {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Variables */
+// Restated Bootstrap Variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #08b987 !default;
+$primary-gradient: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+$primary-color: #08b987;
+$light-color: #172a46;
+$primary-color-light: #28529e8c;
+$secondary-color: #ddb834;
+$hover-color: #353c50;
+$entry-color: #d5d5d5;
+$text-color: #727272;
+$back-color: #040d21;
+$font-primary: "Nunito Sans", sans-serif;
+$font-title: "Nunito Sans", sans-serif;
+$twitter-color: #00acee;
+$facebook-color: #4267b2;
+$instagram-color: linear-gradient(
+  45deg,
+  #f09433 0%,
+  #e6683c 25%,
+  #dc2743 50%,
+  #cc2366 75%,
+  #bc1888 100%
+);
+$youtube-color: #ff0000;
+$google-color: #db4a39;
+$footer-color: #f5f5f5;
+$break-small: 767px;
+$break-medium: 990px;
+$break-normal: 1399px;
+
+.white-text {
+  color: #fff;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.entry-style {
+  color: $entry-color;
+  text-transform: uppercase;
+
+  span {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #83858f;
+
+    a {
+      color: $primary-color;
+    }
+  }
+}
+
+@mixin responsivescroll {
+  @media screen and (max-width: $break-small) {
+    max-width: 100%;
+    display: inline-flex;
+    vertical-align: top;
+    overflow-x: scroll;
+  }
+}
+@mixin title {
+  .section-content {
+    @media screen and (max-width: $break-small) {
+      padding: 0px 0px;
+      margin-bottom: 20px;
+    }
+    .content-card {
+      .content-title {
+        margin-bottom: 20px;
+        h2 {
+          color: $primary-color;
+          font-weight: 700;
+          font-size: 40px;
+          margin-bottom: 0;
+        }
+        p {
+          color: white;
+        }
+      }
+      .card-body {
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.bg-gradient {
+  background-color: $light-color;
+}

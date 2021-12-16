@@ -1,0 +1,15 @@
+.accordion {
+  .card-header {
+    .btn {
+      font-size: 16px;
+      color: $gray-100 !important;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .bg-gradient {
+    background-color: $light-color;
+  }
+}

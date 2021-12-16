@@ -1,0 +1,19 @@
+.section-header {
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
