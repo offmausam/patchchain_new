@@ -1,6 +1,8 @@
 .accordion {
   .card-header {
     .btn {
+      padding-left: 0;
+      padding-right: 0;
       font-size: 16px;
       color: $gray-100 !important;
       &:focus {
@@ -11,5 +13,8 @@
   }
   .bg-gradient {
     background-color: $light-color;
+  }
+  .card-body {
+    color: $gray-100;
   }
 }
