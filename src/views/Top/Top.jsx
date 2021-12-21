@@ -15,23 +15,7 @@ const Top = ({ frontmatter }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const scrollToSection = useSmoothScrollTo(jumpToAnchor);
 
-  const extraInfoPart = (
-    <div className="banner-bottom mt-5">
-      <div className=" button-wrap">
-        <Button variant="primary" className="button-reversed px-5 py-3 text-white mr-3">
-          White Paper
-        </Button>
-        <Button variant="primary" className="px-5 py-3 text-white mr-3">
-          Light Paper
-        </Button>
-        <Button variant="primary" className="px-5 py-3 text-white">
-          Join our Community
-        </Button>
-      </div>
-    </div>
-  );
-
-  return <Banner header={header} subheader={subheader} extraInfo={extraInfoPart} />;
+  return <Banner header={header} subheader={subheader} />;
 };
 
 Top.propTypes = {

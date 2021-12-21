@@ -40,7 +40,7 @@
             font-size: 40px;
           }
           @media screen and (max-width: $break-small) {
-            font-size: 22px;
+            font-size: 36px;
           }
         }
         p {
@@ -93,6 +93,7 @@
       bottom: 40%;
       @media screen and (max-width: $break-small) {
         right: 15px;
+        top: 15px;
       }
       ul {
         position: relative;

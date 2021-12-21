@@ -23,7 +23,7 @@ const Clients = ({ className, frontmatter }) => {
       </Row>
       <Row>
         {clients.map(({ href, imageFileName }) => (
-          <Col md={3} sm={6} className="p-3 mb-3" key={imageFileName}>
+          <Col className="p-3 mb-3 col-3" key={imageFileName}>
             <div className="client-icon">
               <Client href={href} imageFileName={imageFileName} />
             </div>

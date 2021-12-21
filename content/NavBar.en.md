@@ -1,4 +1,4 @@
 ---
 brand: "Patch Chain"
-menuText: "Menu"
+menuText: ""
 ---

@@ -25,7 +25,7 @@ const FAQ = ({ className, frontmatter }) => {
             {faq.map(({ title, detail }) => (
               <Card key={title} className="mb-2 bg-gradient">
                 <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey={title}>
+                  <Accordion.Toggle as={Button} variant="link" className="text-left" eventKey={title}>
                     {title}
                   </Accordion.Toggle>
                 </Card.Header>

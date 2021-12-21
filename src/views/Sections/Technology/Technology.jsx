@@ -20,9 +20,8 @@ const Technology = ({ className, frontmatter }) => {
     <PageSection className={className} id={anchor}>
       <Row>
         <Col md={5}>
-          {/* <img className="w-100 img-fluid" src={imageFileName} alt="test" /> */}
           <Image
-            className="img-fluid d-block mx-auto"
+            className="img-fluid d-block mx-auto mb-4 mb-sm-0"
             fileName={imageFileName}
             alt={imageFileName}
           />

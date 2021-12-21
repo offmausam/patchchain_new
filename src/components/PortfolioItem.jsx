@@ -27,7 +27,7 @@ const PortfolioItem = ({
   }, []);
 
   return (
-    <Col md={3} sm={6}>
+    <Col md={3} sm={6} className="mb-3" >
       <div className="why-p-single">
         <div className="icon-holder">
           <Image className="img-fluid" fileName={imageFileName} alt={imageAlt || header} />

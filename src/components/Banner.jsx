@@ -34,14 +34,23 @@ const Banner = ({ className, header, subheader }) => {
             <p>{subheader}</p>
           </div>
           <div className="banner-bottom">
-            <div className=" button-wrap">
-              <Button variant="primary" className="button-reversed px-5 py-3 text-white mr-3">
+            <div className="button-wrap">
+              <Button
+                variant="primary"
+                className="text-white px-3 px-md-4 py-2 py-md-3 mr-2 mr-md-3 mb-2"
+              >
                 White Paper
               </Button>
-              <Button variant="primary" className="px-5 py-3 text-white mr-3">
+              <Button
+                variant="primary"
+                className="text-white px-3 px-md-4 py-2 py-md-3 mr-2 mr-md-3 mb-2"
+              >
                 Light Paper
               </Button>
-              <Button variant="primary" className="px-5 py-3 text-white">
+              <Button
+                variant="primary"
+                className="text-white px-3 px-md-4 py-2 py-md-3 mr-2 mr-md-3 mb-2"
+              >
                 Join our Community
               </Button>
             </div>
