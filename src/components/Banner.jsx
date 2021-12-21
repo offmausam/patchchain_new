@@ -1,14 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import clsx from "clsx";
 
 import {
   Container,
-  Card,
-  Col,
-  ListGroup,
-  ListGroupItem,
-  Row,
   Button,
   Badge,
 } from "react-bootstrap";
@@ -18,7 +12,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "gatsby";
 import { faFacebook, faGithub, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const Banner = ({ className, header, subheader }) => {
+const Banner = ({ header, subheader }) => {
   return (
     <div className="banner-wrap">
       <Container>
@@ -91,13 +85,11 @@ const Banner = ({ className, header, subheader }) => {
 };
 
 Banner.propTypes = {
-  className: PropTypes.string,
   header: PropTypes.string,
   subheader: PropTypes.string,
 };
 
 Banner.defaultProps = {
-  className: null,
   header: "",
   subheader: "",
 };
