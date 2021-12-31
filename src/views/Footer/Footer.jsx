@@ -24,7 +24,7 @@ const Footer = ({ frontmatter }) => {
           <Row>
             <Col md={4} className="py-5">
               <div className="footer-widget footer-logo-newsletter">
-                <div className="footer-logo">
+                <div className="footer-logo mb-5">
                   <Image className="img-fluid" fileName={imageFileName} alt={imageAlt} />
                 </div>
                 <div className="newsletter-form">
