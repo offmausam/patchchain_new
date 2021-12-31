@@ -9,11 +9,12 @@ import useWindowOnScroll from "hooks/useWindowOnScroll";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import Icon from "components/Icon";
 import NavItem from "components/NavItem";
+import Image from "components/Image";
 
 import "./Navbar.scss";
 
 const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
-  const { brand, menuText } = frontmatter;
+  const { brand, menuText, imageFileName } = frontmatter;
 
   const handleScrollToTop = useSmoothScrollTo(0);
 
@@ -40,7 +41,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
     <Navbar className={clsx("navbar-root")} expand="lg" expanded={expanded}>
       <Container>
         <Navbar.Brand className="cursor-pointer" onClick={handleBrandClick}>
-          {brand}
+          <Image className="img-fluid" fileName={imageFileName} alt={brand} />
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
           {menuText}
@@ -60,6 +61,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
 };
 
 MyNavbar.propTypes = {
+  imageFileName: PropTypes.string.isRequired,
   anchors: PropTypes.arrayOf(PropTypes.string),
   frontmatter: PropTypes.object,
   extraItems: PropTypes.any,

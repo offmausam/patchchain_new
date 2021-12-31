@@ -1,7 +1,7 @@
 .footer-wrap {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   .footer-logo {
-    margin-bottom: 30px;
+    width: 40%;
     h4 {
       color: $gray-100;
       font-size: 40px;
@@ -16,7 +16,7 @@
       .form-group {
         display: flex;
         input {
-          height: 60px;
+          height: 50px;
           padding: 15px;
           margin-bottom: 0;
           &[type="email"] {
@@ -43,7 +43,6 @@
   .bg {
     background-image: url("../../../content/assets/images/pattern.png");
     background-size: contain;
-    padding: 20px;
   }
   .footer-menu {
     .footer-title {
@@ -78,4 +77,8 @@
       }
     }
   }
+}
+
+.footer-bottom-text {
+  font-size: 14px;
 }

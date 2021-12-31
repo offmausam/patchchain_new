@@ -7,25 +7,28 @@ import "./Footer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faTelegram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import Image from "components/Image";
 
 const Footer = ({ frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
 
-  const { copyright, privacyHref, privacyText, termsHref, termsText } = frontmatter;
+  const { copyright, privacyHref, privacyText, termsHref, termsText, imageFileName, imageAlt } =
+    frontmatter;
 
   return (
-    <footer className="footer py-3">
+    <footer className="footer">
       <Container>
-        <div className="footer-wrap pt-5">
+        <div className="footer-wrap">
           <Row>
-            <Col md={6}>
+            <Col md={4} className="py-5">
               <div className="footer-widget footer-logo-newsletter">
                 <div className="footer-logo">
-                  <h4>PatchChain</h4>
+                  <Image className="img-fluid" fileName={imageFileName} alt={imageAlt} />
                 </div>
                 <div className="newsletter-form">
+                  <h5 className="text-white mb-3">Subscribe to out Newsletter!</h5>
                   <form action="">
                     <div className="form-group mb-0">
                       <input type="email" placeholder="Enter your Email" />
@@ -35,7 +38,7 @@ const Footer = ({ frontmatter }) => {
                 </div>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={{ size: 3, offset: 1 }} className="py-5">
               <div className="footer-menu">
                 <h3 className="footer-title">Patch chain</h3>
                 <ul className="list-unstyled">
@@ -51,8 +54,8 @@ const Footer = ({ frontmatter }) => {
                 </ul>
               </div>
             </Col>
-            <Col md={3}>
-              <div className="footer-menu bg">
+            <Col md={4} className="py-5 bg">
+              <div className="footer-menu">
                 <h3 className="footer-title">Stay in touch</h3>
                 <ul className="list-unstyled footer-social">
                   <li>
@@ -84,11 +87,11 @@ const Footer = ({ frontmatter }) => {
               </div>
             </Col>
           </Row>
-          <Row className="align-items-center text-center d-flex justify-content-between">
+          <Row className="align-items-center text-center d-flex justify-content-between py-3 footer-bottom-text">
             <Col lg={5} className="text-lg-left text-white">
               {copyright}
             </Col>
-            <Col lg={4} className="text-lg-right">
+            <Col lg={4} className="text-sm-right">
               <a className="mr-3" href={privacyHref}>
                 {privacyText}
               </a>
