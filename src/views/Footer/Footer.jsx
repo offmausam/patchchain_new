@@ -22,7 +22,7 @@ const Footer = ({ frontmatter }) => {
       <Container>
         <div className="footer-wrap">
           <Row>
-            <Col md={4} className="py-5">
+            <Col md={4} className="py-3 py-md-5">
               <div className="footer-widget footer-logo-newsletter">
                 <div className="footer-logo mb-5">
                   <Image className="img-fluid" fileName={imageFileName} alt={imageAlt} />
@@ -32,13 +32,13 @@ const Footer = ({ frontmatter }) => {
                   <form action="">
                     <div className="form-group mb-0">
                       <input type="email" placeholder="Enter your Email" />
-                      <input type="submit" value="Subscribe" className="btn btn-primary" />
+                      <input type="submit" value="Subscribe" className="btn btn-gradient" />
                     </div>
                   </form>
                 </div>
               </div>
             </Col>
-            <Col md={{ size: 3, offset: 1 }} className="py-5">
+            <Col md={{ size: 3, offset: 1 }} className="py-3 py-md-5">
               <div className="footer-menu">
                 <h3 className="footer-title">Patch chain</h3>
                 <ul className="list-unstyled">
@@ -54,7 +54,7 @@ const Footer = ({ frontmatter }) => {
                 </ul>
               </div>
             </Col>
-            <Col md={4} className="py-5 bg">
+            <Col md={4} className="py-3 py-md-5 bg">
               <div className="footer-menu">
                 <h3 className="footer-title">Stay in touch</h3>
                 <ul className="list-unstyled footer-social">

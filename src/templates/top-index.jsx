@@ -33,9 +33,11 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
+          teams {
             href
             imageFileName
+            name
+            position
           }
           copyright
           header
@@ -104,10 +106,7 @@ const IndexPage = ({ data, pageContext: { langKey } }) => {
   return (
     <>
       <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
-      <Navbar
-        anchors={anchors}
-        frontmatter={navBarNode.frontmatter}
-      />
+      <Navbar anchors={anchors} frontmatter={navBarNode.frontmatter} />
       <Top frontmatter={topNode.frontmatter} />
       {
         // dynamically import sections

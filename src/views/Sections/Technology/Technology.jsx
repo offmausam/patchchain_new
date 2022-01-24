@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { Row, Col } from "react-bootstrap";
-import Image from "components/Image";
 
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
@@ -19,12 +18,11 @@ const Technology = ({ className, frontmatter }) => {
   return (
     <PageSection className={className} id={anchor}>
       <Row>
-        <Col md={5}>
-          <Image
-            className="img-fluid d-block mx-auto mb-4 mb-sm-0"
-            fileName={imageFileName}
-            alt={imageFileName}
-          />
+        <Col md={5} className="mb-3 mb-md-0">
+          <video controls autoPlay className="video-container">
+            <source src={imageFileName} type="video/mp4" />
+            <track kind="captions" srcLang="en" />
+          </video>
         </Col>
         <Col md={7}>
           <SectionHeader header={rootHeader} subheader={rootSubHeader} />
@@ -43,7 +41,10 @@ const Technology = ({ className, frontmatter }) => {
                 inform of fee re-distribution & Burn
               </li>
             </ul>
-            <a href="" className="mt-4 px-5 py-3 text-white mr-3 btn btn-primary">
+            <a
+              href=""
+              className="mt-4 mb-3 px-5 py-3 text-white mr-3 btn-gradient btn-gradient-text"
+            >
               Explore
             </a>
           </Col>

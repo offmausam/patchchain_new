@@ -32,7 +32,6 @@ $gray-900: #212529 !default;
 $black: #000 !default;
 
 $primary: #08b987 !default;
-$primary-gradient: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
 $primary-color: #08b987;
 $light-color: #172a46;
 $primary-color-light: #28529e8c;
@@ -40,7 +39,7 @@ $secondary-color: #ddb834;
 $hover-color: #353c50;
 $entry-color: #d5d5d5;
 $text-color: #727272;
-$back-color: #040d21;
+$back-color: #000000;
 $font-primary: "Nunito Sans", sans-serif;
 $font-title: "Nunito Sans", sans-serif;
 $twitter-color: #00acee;
@@ -56,21 +55,18 @@ $instagram-color: linear-gradient(
 $youtube-color: #ff0000;
 $google-color: #db4a39;
 $footer-color: #f5f5f5;
+$gradient-blue: #5e69e8;
+$gradient-red: #e85b91;
+$gradient-orange: #f2a15b;
+$primary-gradient: -webkit-linear-gradient(
+  -70deg,
+  $gradient-blue 0%,
+  $gradient-red 50%,
+  $gradient-orange 100%
+);
 $break-small: 767px;
 $break-medium: 990px;
 $break-normal: 1399px;
-
-.white-text {
-  color: #fff;
-}
-
-.gradient-text {
-  background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;
-}
 
 .entry-style {
   color: $entry-color;

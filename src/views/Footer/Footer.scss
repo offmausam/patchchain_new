@@ -1,7 +1,7 @@
 .footer-wrap {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   .footer-logo {
-    width: 40%;
+    width: 50%;
     h4 {
       color: $gray-100;
       font-size: 40px;
@@ -10,7 +10,7 @@
   .newsletter-form {
     border-radius: 3px;
     form {
-      background-color: #172a46;
+      background-color: $gray-900;
       padding: 16px;
       .form-group {
         display: flex;
@@ -25,7 +25,14 @@
             }
           }
           &[type="submit"] {
-            background-color: $primary;
+            background: $gradient-blue;
+            background: linear-gradient(
+              60deg,
+              $gradient-blue 0%,
+              $gradient-red 50%,
+              $gradient-orange 100%
+            );
+            color: $gray-100;
             width: 30%;
             font-size: 11px;
             border-top-left-radius: 0;

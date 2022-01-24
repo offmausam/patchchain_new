@@ -1,11 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import {
-  Container,
-  Button,
-  Badge,
-} from "react-bootstrap";
+import { Container, Button, Badge } from "react-bootstrap";
 import "./Banner.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -23,30 +19,30 @@ const Banner = ({ header, subheader }) => {
             </Badge>
             <p>Patch whitelist is now open</p>
           </div>
-          <div className=" banner-mid">
-            <h1>{header}</h1>
+          <div className="banner-mid">
+            <h1 className="gradient-text">{header}</h1>
             <p>{subheader}</p>
           </div>
           <div className="banner-bottom">
             <div className="button-wrap">
-              <Button
-                variant="primary"
-                className="text-white px-3 px-md-4 py-2 py-md-3 mr-2 mr-md-3 mb-2"
+              <Link
+                to="#"
+                className="text-white px-3 px-md-5 py-2 py-md-3 mr-2 mr-md-3 mb-2 btn-gradient btn-gradient-text"
               >
                 White Paper
-              </Button>
-              <Button
-                variant="primary"
-                className="text-white px-3 px-md-4 py-2 py-md-3 mr-2 mr-md-3 mb-2"
+              </Link>
+              <Link
+                to="#"
+                className="text-white px-3 px-md-5 py-2 py-md-3 mr-2 mr-md-3 mb-2 btn-gradient btn-gradient-text"
               >
                 Light Paper
-              </Button>
-              <Button
-                variant="primary"
-                className="text-white px-3 px-md-4 py-2 py-md-3 mr-2 mr-md-3 mb-2"
+              </Link>
+              <Link
+                to="#"
+                className="text-white px-3 px-md-5 py-2 py-md-3 mr-2 mr-md-3 mb-2 btn-gradient btn-gradient-text"
               >
                 Join our Community
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -19,7 +19,11 @@ const Roadmap = ({ className, frontmatter }) => {
   return (
     <PageSection className={className} id={anchor}>
       <Row>
-        <SectionHeader header={rootHeader} subheader={rootSubHeader} className="text-center mb-5" />
+        <SectionHeader
+          header={rootHeader}
+          subheader={rootSubHeader}
+          className="text-center mb-5 d-flex justify-content-center"
+        />
       </Row>
       <Row>
         <Col lg={12}>

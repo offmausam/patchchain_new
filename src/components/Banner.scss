@@ -29,11 +29,6 @@
       }
       .banner-mid {
         h1 {
-          background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          -webkit-box-decoration-break: clone;
           font-size: 60px;
           font-weight: 800;
           @media screen and (max-width: $break-normal) {
